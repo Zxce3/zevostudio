@@ -8,18 +8,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch-instagram-posts": "node fetchInstagramPosts.js"
   },
-
-
-  
   "dependencies": {
+    "@alpinejs/intersect": "^3.14.8",
     "@astrojs/preact": "^3.5.3",
     "@astrojs/sitemap": "^3.1.6",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "astro": "^4.15.4",
+    "dotenv": "^16.0.0",
     "preact": "^10.23.2",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
