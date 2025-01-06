@@ -5,7 +5,7 @@ import { igposts } from "@/data/instagram.json";
 <section class="scroll-mt-24" id="instagram-posts">
   <div class="px-8 md:px-12 py-24 max-w-2xl mx-auto">
     <h2 class="text-xl tracking-tighter font-light text-black">
-      Instagram Posts
+      Some of Our Work
     </h2>
 
     <div class="flex flex-col w-full">
@@ -57,9 +57,7 @@ import { igposts } from "@/data/instagram.json";
                 src={`https://www.instagram.com/p/${postId}/embed`}
                 width="100%"
                 height="500"
-                frameBorder="0"
                 scrolling="no"
-                allowTransparency="true"
                 title={`Instagram post ${index + 1}`}
                 onLoad={() => setTimeout(() => document.getElementById(`skeleton-${index}`).style.display = 'none', 3000)}
               ></iframe>
