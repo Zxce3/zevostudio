@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch-instagram-posts": "node fetchInstagramPosts.js"
+    "fips": "node fetchInstagramPosts.js"
   },
   "dependencies": {
     "@alpinejs/intersect": "^3.14.8",
