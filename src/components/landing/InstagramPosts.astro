@@ -51,8 +51,7 @@ import { igposts } from "@/data/instagram.json";
         >
           {igposts.map((postId, index) => (
             <div class="shrink-0 snap-end w-80 relative flex justify-center" key={index}>
-              <div class="w-full h-[500px] bg-gray-200 animate-pulse absolute top-0 left-0" id={`skeleton-${index}`}></div>
-
+              <div class="w-full h-[500px] bg-gray-200 animate-pulse absolute top-0 left-0 backdrop-blur" id={`skeleton-${index}`}></div>
               <iframe
                 src={`https://www.instagram.com/p/${postId}/embed`}
                 width="100%"
