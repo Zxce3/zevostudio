@@ -8,4 +8,4 @@ export let byCode: string[] = [
   "DAXGhA9SHEU"
 ];
 
-export const igposts = byCode.map(icodes => ({ icodes }));
+export const igposts = byCode.map(code => code);

@@ -5,11 +5,11 @@ dotenv.config();
 
 const url = 'https://instagram-scraper-api2.p.rapidapi.com/v1.2/posts?username_or_id_or_url=zevostudio_';
 const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': process.env.RAPIDAPI_KEY,
-		'x-rapidapi-host': process.env.RAPIDAPI_HOST
-	}
+    method: 'GET',
+    headers: {
+        'x-rapidapi-key': process.env.RAPIDAPI_KEY,
+        'x-rapidapi-host': process.env.RAPIDAPI_HOST
+    }
 };
 
 async function fetchInstagramPosts() {
@@ -19,7 +19,7 @@ async function fetchInstagramPosts() {
         
         const postCodes = result.data.items.map(item => item.code);
 
-        const jsonData = `export let byCode: string[] = ${JSON.stringify(postCodes, null, 2)};\n\nexport const igposts = byCode.map(icodes => ({ icodes }));`;
+        const jsonData = `export let byCode: string[] = ${JSON.stringify(postCodes, null, 2)};\n\nexport const igposts = byCode.map(code => code);`;
         
         fs.writeFile('src/data/instagram.json.ts', jsonData, 'utf8', (err) => {
             if (err) {
