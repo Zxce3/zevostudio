@@ -1,5 +1,4 @@
 export let byCode: string[] = [
-  "DEEEo30SlvA",
   "DEEDE0mSihi",
   "DD3rKOiyBTz",
   "DD3rGa1yPjj",
@@ -9,4 +8,4 @@ export let byCode: string[] = [
   "DAXGhA9SHEU"
 ];
 
-export const igposts = byCode.map(code => code);
+export const igposts = byCode.map(icodes => ({ icodes }));
