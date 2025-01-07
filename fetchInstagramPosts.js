@@ -12,7 +12,7 @@ const options = {
     }
 };
 
-async function fetchInstagramPosts() {
+export async function fetchInstagramPosts() {
     try {
         const response = await fetch(url, options);
         const result = await response.json();  // Parse the response as JSON
