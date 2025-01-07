@@ -12,10 +12,8 @@ export default defineConfig({
   site: "https://zevostudio.netlify.app",
   integrations: [ sitemap()],
   hooks: {
-    'astro:build:start': async ({ command }) => {
-      if (command === 'build') {
-        await fetchInstagramPosts();
-      }
+    'astro:build:start': async () => {
+      await fetchInstagramPosts();
     }
   }
 });
